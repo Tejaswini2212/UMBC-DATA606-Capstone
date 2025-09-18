@@ -77,4 +77,15 @@ Features / Predictors: Market Price, 1Y Return, Volatility/Risk, Category
 #### Approach for this Project
 1.Expense Tracking → Parse user transactions and calculate current savings.</br>
 2.Investment Scoring → Filter and rank affordable investments based on risk and expected return.</br>
-3.Recommendation Display → Show top investment options and savings summary via Streamlit.
+3.Recommendation Display → Show top investment options and savings summary.
+
+#### Tech Stack
+
+* **Python** → Core programming and backend logic
+* **Streamlit** → Interactive web interface for user input and output
+* **Pandas** → Data handling for transactions and savings
+* **Regex / spaCy** → Parse user inputs for amounts, categories, and transaction types
+* **Yahoo Finance API / yfinance** → Fetch real-time stock/ETF prices, historical returns, and volatility
+* **Matplotlib / Seaborn / Plotly** → Optional visualization of expenses and investment allocation
+* **CSV / SQLite (optional)** → Store past transactions and recommendations
+
