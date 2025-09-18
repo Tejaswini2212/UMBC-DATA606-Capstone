@@ -17,9 +17,9 @@ Personal finance management has become increasingly challenging in today’s dig
 - Managing personal finances is often confusing and time-consuming. Many people struggle with tracking expenses, saving consistently, and choosing safe investments. A chatbot that simplifies these tasks makes financial management more accessible, personalized, and effective, acting as a virtual advisor without the need for expert knowledge.
 
 **Research Questions**  
-1.How can expenses be automatically categorized from raw bank transaction data?
-2.What methods can be used to analyze spending and identify savings potential?
-3.How can the chatbot provide personalized, risk-aware investment recommendations? 
+1.How can expenses be automatically categorized from raw bank transaction data?</br>
+2.What methods can be used to analyze spending and identify savings potential?</br>
+3.How can the chatbot provide personalized, risk-aware investment recommendations? </br>
 
 
 ## 3. Data
@@ -72,5 +72,8 @@ Features / Predictors: Description, Amount, Transaction Type, Account Name
 | Volatility/Risk | Float       | Standard deviation or risk metric | e.g., 0.15                       |
 | Category        | Categorical | Investment type (risk-based)      | Low Risk, Medium Risk, High Risk |
 
-Target / Label:  used in recommendation logic
 Features / Predictors: Market Price, 1Y Return, Volatility/Risk, Category
+**Approach for this Project**
+1.Expense Tracking → Parse user transactions and calculate current savings.</br>
+2.Investment Scoring → Filter and rank affordable investments based on risk and expected return.</br>
+3.Recommendation Display → Show top investment options and savings summary via Streamlit.
