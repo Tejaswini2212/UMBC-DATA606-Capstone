@@ -1,4 +1,4 @@
-# Personal Financial and Investment Chatbot
+# WealthTrack : Intelligent Expense & Investment Assistant
 
 **Prepared for**: UMBC Data Science Master’s Degree Capstone – Dr. Chaojie (Jay) Wang  
 
