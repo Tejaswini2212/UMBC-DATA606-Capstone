@@ -8,79 +8,21 @@
 - **LinkedIn Profile**: *https://www.linkedin.com/in/tejaswinijammi*  
 
 ## 2. Background
+Personal finance management has become increasingly challenging in today’s digital world. People often struggle to keep track of their spending across multiple accounts, which leads to overspending and poor saving habits. While banks provide statements, they are not user-friendly for day-to-day financial decision-making. At the same time, many individuals hesitate to invest due to a lack of awareness about safe and suitable options.
 
-Hypertension (high blood pressure) is a leading risk factor for cardiovascular disease and stroke.  
-This project develops a machine-learning regression model to **predict systolic and diastolic blood pressure** using demographic, dietary, physical activity, smoking, and alcohol indicators derived from the U.S. **National Health and Nutrition Examination Survey (NHANES)**.
+** What is this about**
+- This project is about creating a financial chatbot that helps users manage money more effectively. It can read bank statements (CSV/PDF), categorize expenses, track savings, and suggest suitable investment options based on user risk levels. Using conversational AI, it provides an easy way for users to ask questions about their finances and receive personalized, actionable advice.
 
 **Why it matters**  
-- Enables early detection of elevated blood pressure risk.  
-- Highlights modifiable lifestyle factors—such as sodium intake, exercise, smoking, and drinking—that can guide personal and public-health interventions.  
-- Demonstrates an end-to-end data science workflow with real public health data.
+- Managing personal finances is often confusing and time-consuming. Many people struggle with tracking expenses, saving consistently, and choosing safe investments. A chatbot that simplifies these tasks makes financial management more accessible, personalized, and effective, acting as a virtual advisor without the need for expert knowledge.
 
 **Research Questions**  
-1. To what extent can demographic, diet, physical activity, smoking, and alcohol variables predict blood pressure?  
-2. Which factors contribute most to systolic and diastolic blood pressure?
+1.How can expenses be automatically categorized from raw bank transaction data?
+2.What methods can be used to analyze spending and identify savings potential?
+3.How can the chatbot provide personalized, risk-aware investment recommendations? 
 
 
 ## 3. Data
 
 #### Data Sources
-NHANES survey cycles covering **August 2021 – August 2023**  
-(publicly available at [https://www.cdc.gov/nchs/nhanes/](https://www.cdc.gov/nchs/nhanes/)):
-#### Data Shape
-- Rows: 7518 
-- Columns: 17
-- Approx file size (MB): 1.02
 
-To build a single machine-learning-ready table, **combined several NHANES component datasets** by joining on the unique participant ID `SEQN`:
-
-- **Examination**: BPX (Blood Pressure), BMX (Body Measures)
-- **Demographics**: DEMO
-- **Dietary**: DR1TOT (Day-1 nutrient intake)
-- **Physical Activity**: PAQ
-- **Smoking**: SMQ
-- **Alcohol**: ALQ
-
-This integration step ensured that each participant’s demographics, body measures, diet, activity level, smoking history, and alcohol consumption are available in **one dataset**.
-
-#### Data Details
-
-- **Time period covered**  
-  August 2021 – August 2023 (NHANES survey cycles for those two years)
-
-- **Observation unit**  
-  Each row represents **one individual NHANES participant**, with all lifestyle, demographic, and health measurements merged into a single record.
-
-- **Data dictionary (key columns)**  
-
-| Column | Type | Definition / Units | Categories / Encoded Labels |
-|--------|------|--------------------|------------------------------|
-| `Participant_ID` | int | Unique NHANES participant ID | e.g., 130378 |
-| `Systolic_BP` | float | Mean systolic blood pressure (mmHg) | – |
-| `Diastolic_BP` | float | Mean diastolic blood pressure (mmHg) | – |
-| `Age_Years` | int | Age of participant | e.g., 43 |
-| `Gender` | category | Biological sex | 0 = Male, 1 = Female |
-| `Race_Ethnicity` | category | Race/ethnicity group | 0 = Non-Hispanic White, 1 = Non-Hispanic Black, 2 = Mexican American, 3 = Other (Other Hispanic, Non-Hispanic Asian, Multiracial) |
-| `BMI` | float | Body Mass Index (kg/m²) | e.g., 27.5 |
-| `Weight_kg` | float | Body weight | e.g., 74.0 |
-| `Height_cm` | float | Body height | e.g., 172.0 |
-| `Sodium_mg` | float | Daily sodium intake | e.g., 3200 |
-| `Potassium_mg` | float | Daily potassium intake | e.g., 2900 |
-| `Calories_kcal` | float | Total daily calorie intake | e.g., 2100 |
-| `Vigorous_Activity_Days` | int | Days/week of vigorous activity | 0–7 |
-| `Moderate_Activity_Days` | int | Days/week of moderate activity | 0–7 |
-| `Ever_Smoked_100_Cigs` | category | Ever smoked ≥100 cigarettes | 0 = No, 1 = Yes |
-| `Current_Smoking_Status` | category | Current smoking frequency | 0 = Not at all, 1 = Some days, 2 = Every day |
-| `Drinks_per_Week` | float | Estimated alcoholic drinks per week | e.g., 2.5 |
-| `Had_12_Drinks_Lifetime` | category | Ever consumed ≥12 drinks in lifetime | 0 = No, 1 = Yes |
-
-- **Target / Label variables for ML model**  
-  - `Systolic_BP`  
-  - `Diastolic_BP`
-
-- **Feature / Predictor candidates**  
-  - Demographics: `Age_Years`, `Gender`, `Race_Ethnicity`
-  - Body measures: `BMI`, `Weight_kg`, `Height_cm`
-  - Diet: `Sodium_mg`, `Potassium_mg`, `Calories_kcal`
-  - Physical activity: `Vigorous_Activity_Days`, `Moderate_Activity_Days`
-  - Lifestyle habits: `Ever_Smoked_100_Cigs`, `Current_Smoking_Status`, `Drinks_per_Week`
