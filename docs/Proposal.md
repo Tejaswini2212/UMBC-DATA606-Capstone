@@ -73,7 +73,8 @@ Features / Predictors: Description, Amount, Transaction Type, Account Name
 | Category        | Categorical | Investment type (risk-based)      | Low Risk, Medium Risk, High Risk |
 
 Features / Predictors: Market Price, 1Y Return, Volatility/Risk, Category
-**Approach for this Project**
+
+####Approach for this Project
 1.Expense Tracking → Parse user transactions and calculate current savings.</br>
 2.Investment Scoring → Filter and rank affordable investments based on risk and expected return.</br>
 3.Recommendation Display → Show top investment options and savings summary via Streamlit.
