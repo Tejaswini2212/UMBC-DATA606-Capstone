@@ -33,7 +33,7 @@ Sources: Yahoo Finance (yfinance)
 Provides stock, ETF, and crypto market data (prices, returns, risk metrics).
 Free to use: for data retrieval.
 
-###Data Size & Shape
+#### Data Size & Shape
 Personal Finance Dataset:
 Size: ~100 KB
 Rows: ~1,200 transactions
