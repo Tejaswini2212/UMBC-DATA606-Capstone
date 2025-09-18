@@ -33,7 +33,7 @@ Sources: Yahoo Finance (yfinance)
 Provides stock, ETF, and crypto market data (prices, returns, risk metrics).
 Free to use: for data retrieval.
 
-#### Data Size & Shape
+**Data Size & Shape**
 Personal Finance Dataset:
 Size: ~100 KB
 Rows: ~1,200 transactions
@@ -44,11 +44,11 @@ Size per API call: <1 MB
 Rows: Number of instruments queried (~10–50)
 Columns: 5–10
 
-####Time Period
+**Time Period**
 Bank transactions: 2018 (monthly transactions)
 Financial API: Real-time 
 
-#### Data Dictionary
+**Data Dictionary**
 Personal Finance Dataset
 | Column Name      | Data Type   | Definition / Units                  | Potential Values / Categories                                                |
 | ---------------- | ----------- | ----------------------------------- | ---------------------------------------------------------------------------- |
@@ -72,5 +72,5 @@ Features / Predictors: Description, Amount, Transaction Type, Account Name
 | Volatility/Risk | Float       | Standard deviation or risk metric | e.g., 0.15                       |
 | Category        | Categorical | Investment type (risk-based)      | Low Risk, Medium Risk, High Risk |
 
-Target / Label: Not used for ML; used in recommendation logic
+Target / Label:  used in recommendation logic
 Features / Predictors: Market Price, 1Y Return, Volatility/Risk, Category
