@@ -8,9 +8,9 @@
 - **LinkedIn Profile**: *https://www.linkedin.com/in/tejaswinijammi*  
 
 ## 2. Background
-**💵**Personal finance management has become increasingly challenging in today’s digital world. People often struggle to keep track of their spending across multiple accounts, which leads to overspending and poor saving habits. While banks provide statements, they are not user-friendly for day-to-day financial decision-making. At the same time, many individuals hesitate to invest due to a lack of awareness about safe and suitable options.
+Personal finance management has become increasingly challenging in today’s digital world. People often struggle to keep track of their spending across multiple accounts, which leads to overspending and poor saving habits. While banks provide statements, they are not user-friendly for day-to-day financial decision-making. At the same time, many individuals hesitate to invest due to a lack of awareness about safe and suitable options.
 
-**What is this about**
+**💵What is this about**
 - This project is about creating a financial chatbot that helps users manage money more effectively. It can read bank statements (CSV/PDF), categorize expenses, track savings, and suggest suitable investment options based on user risk levels. Using conversational AI, it provides an easy way for users to ask questions about their finances and receive personalized, actionable advice.
 
 **Why it matters**  
