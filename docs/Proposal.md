@@ -87,5 +87,5 @@ Features / Predictors: Market Price, 1Y Return, Volatility/Risk, Category
 * **Regex / spaCy** → Parse user inputs for amounts, categories, and transaction types
 * **Yahoo Finance API / yfinance** → Fetch real-time stock/ETF prices, historical returns, and volatility
 * **Matplotlib / Seaborn / Plotly** → Optional visualization of expenses and investment allocation
-* **CSV / SQLite (optional)** → Store past transactions and recommendations
+* **CSV / SQLite ** → Store past transactions and recommendations
 
