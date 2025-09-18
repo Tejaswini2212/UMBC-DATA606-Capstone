@@ -25,4 +25,52 @@ Personal finance management has become increasingly challenging in today’s dig
 ## 3. Data
 
 #### Data Sources
+**Personal Finance Dataset (Bank Transactions)**
+Source: Kaggle [personal_transactions.csv][https://www.kaggle.com/datasets/uom220338n/personal-finance-dataset?select=personal_transactions.csv]
 
+**Financial Market Data (Investment APIs)**
+Sources: Yahoo Finance (yfinance)
+Provides stock, ETF, and crypto market data (prices, returns, risk metrics).
+Free to use: for data retrieval.
+
+#### Data Size & Shape
+Personal Finance Dataset:
+Size: ~100 KB
+Rows: ~1,200 transactions
+Columns: 6
+
+Financial API Dataset:
+Size per API call: <1 MB
+Rows: Number of instruments queried (~10–50)
+Columns: 5–10
+
+####Time Period
+Bank transactions: 2018 (monthly transactions)
+Financial API: Real-time 
+
+#### Data Dictionary
+Personal Finance Dataset
+| Column Name      | Data Type   | Definition / Units                  | Potential Values / Categories                                                |
+| ---------------- | ----------- | ----------------------------------- | ---------------------------------------------------------------------------- |
+| Date             | DateTime    | Transaction date                    | YYYY-MM-DD HH\:MM\:SS                                                        |
+| Description      | String      | Merchant or transaction description | Amazon, Netflix, Gas Company, etc.                                           |
+| Amount           | Float       | Transaction value                   | Positive for credit, negative for debit                                      |
+| Transaction Type | Categorical | Type of transaction                 | debit, credit                                                                |
+| Category         | Categorical | Expense category                    | Shopping, Restaurants, Utilities, Paycheck, Mortgage & Rent, Groceries, etc. |
+| Account Name     | Categorical | Account used for the transaction    | Platinum Card, Silver Card, Checking, etc.                                   |
+
+Target / Label: Category (expense classification)
+Features / Predictors: Description, Amount, Transaction Type, Account Name
+
+**Financial API Dataset**
+| Column Name     | Data Type   | Definition / Units                | Potential Values / Categories    |
+| --------------- | ----------- | --------------------------------- | -------------------------------- |
+| Ticker          | String      | Symbol of the instrument          | SPY, VTI, BTC-USD                |
+| Name            | String      | Name of the instrument            | S\&P 500 ETF, Bitcoin            |
+| Market Price    | Float       | Current market price              | e.g., 555.20                     |
+| 1Y Return       | Float       | One-year historical return (%)    | e.g., 12.5                       |
+| Volatility/Risk | Float       | Standard deviation or risk metric | e.g., 0.15                       |
+| Category        | Categorical | Investment type (risk-based)      | Low Risk, Medium Risk, High Risk |
+
+Target / Label: Not used for ML; used in recommendation logic
+Features / Predictors: Market Price, 1Y Return, Volatility/Risk, Category
