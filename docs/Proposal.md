@@ -28,10 +28,9 @@ Personal finance management has become increasingly challenging in today’s dig
 **Personal Finance Dataset (Bank Transactions)**
 Source: Kaggle [personal_transactions.csv][https://www.kaggle.com/datasets/uom220338n/personal-finance-dataset?select=personal_transactions.csv]
 
-**Financial Market Data (Investment APIs)**
+**Financial Market Data (Investment APIs)**</br>
 Sources: Yahoo Finance (yfinance)
 Provides stock, ETF, and crypto market data (prices, returns, risk metrics).
-Free to use: for data retrieval.
 
 #### Data Size & Shape
 Personal Finance Dataset:
