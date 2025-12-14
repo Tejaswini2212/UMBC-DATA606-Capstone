@@ -9,7 +9,7 @@ Dr. Chaojie (Jay) Wang
 Tejaswini Jammi  
 
 **GitHub Repository:**  
-https://github.com/TejaswiniJammi/Personal-Finance-Chatbot](https://github.com/Tejaswini2212/UMBC-DATA606-Capstone  
+https://github.com/Tejaswini2212/UMBC-DATA606-Capstone  
 
 **LinkedIn Profile:**  
 https://www.linkedin.com/in/tejaswini-jammi  
