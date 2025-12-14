@@ -12,7 +12,7 @@ Tejaswini Jammi
 https://github.com/Tejaswini2212/UMBC-DATA606-Capstone  
 
 **LinkedIn Profile:**  
-https://www.linkedin.com/in/tejaswini-jammi  
+https://www.linkedin.com/in/tejaswinijammi/
 
 **PowerPoint Presentation:**  
 *(Add link here)*  
