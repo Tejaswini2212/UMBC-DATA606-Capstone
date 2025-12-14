@@ -45,7 +45,7 @@ This project presents an **AI-powered personal finance chatbot** that automatica
 ## 2. Data
 
 ### Data Sources
-- User-uploaded Bank of America debit and credit card PDF statements
+- User-uploaded Bank debit and credit card PDF statements
 - OCR + LLM-based extraction pipeline
 
 ### Data Size
