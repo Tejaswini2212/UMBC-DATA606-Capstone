@@ -49,8 +49,8 @@ User-uploaded bank statement PDF files (debit and credit)
 Approximately 1–3 MB per PDF statement
 
 **Data Shape:**  
-1,000–5,000 rows per user  
-15–20 columns per transaction
+1000-5000 rows per user  
+5-8 columns per transaction
 
 **Time Period:**  
 Monthly bank statements (user-dependent)
