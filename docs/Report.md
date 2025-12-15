@@ -79,7 +79,7 @@ Amount, description, vendor, date, account type
 
 ## 4. Exploratory Data Analysis (EDA)
 
-EDA was performed using Jupyter Notebook.
+EDA was performed using Plotly in Dashboard / Analytics .
 
 Key steps:
 - Summary statistics of income and expenses
