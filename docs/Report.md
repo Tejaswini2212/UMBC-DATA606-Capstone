@@ -1,170 +1,173 @@
-# AI-Powered Personal Finance & Investment Chatbot
-### A Data-Driven Financial Intelligence System Using OCR, LLMs, and Interactive Dashboards
+# AI-Powered Personal Finance Chatbot
+
+## 1. Title and Author
+
+**Project Title:**  
+AI-Powered Personal Finance Chatbot Using OCR and Large Language Models
 
 **Prepared for:**  
-UMBC Data Science Master’s Degree Capstone  
-Dr. Chaojie (Jay) Wang  
+UMBC Data Science Master Degree Capstone  
+Dr Chaojie (Jay) Wang
 
 **Author:**  
-Tejaswini Jammi  
+Tejaswini Jammi
 
 **GitHub Repository:**  
-https://github.com/Tejaswini2212/UMBC-DATA606-Capstone  
+https://github.com/TejaswiniJammi/Personal-Finance-Chatbot
 
 **LinkedIn Profile:**  
-https://www.linkedin.com/in/tejaswinijammi/
+https://www.linkedin.com/in/tejaswini-jammi
 
 **PowerPoint Presentation:**  
-*(Add link here)*  
+(To be added)
 
-**YouTube Demo Video:**  
-*(Add link here)*  
-
----
-
-## 1. Background
-
-Personal finance management is a critical yet challenging task for many individuals. Bank statements are typically delivered as unstructured PDF documents that are difficult for users to analyze beyond basic balances and monthly totals. Users often struggle to understand spending patterns, identify savings opportunities, and plan financial goals effectively.
-
-This project presents an **AI-powered personal finance chatbot** that automatically extracts structured financial data from bank statements and allows users to interact with their financial history using natural language queries.
-
-### Why It Matters
-- Banking apps provide limited analytical insights
-- Manual budgeting is time-consuming and error-prone
-- Financial tools lack personalization
-- Conversational AI enables intuitive data access
-
-### Research Questions
-1. Can OCR and LLMs reliably extract structured data from unstructured bank statements?
-2. Can natural language queries be translated into accurate SQL queries?
-3. Do interactive dashboards improve financial awareness?
-4. Can AI-driven insights support better financial decisions?
+**YouTube Video:**  
+(To be added)
 
 ---
 
-## 2. Data
+## 2. Background
 
-### Data Sources
-- User-uploaded Bank debit and credit card PDF statements
-- OCR + LLM-based extraction pipeline
+This project builds an intelligent chatbot that helps users understand their personal finances by analyzing bank statements.
 
-### Data Size
-- PDF statements: ~1–3 MB per file
-- Database size scales with user uploads
+Bank statements are usually provided as unstructured PDF files, making it difficult for users to analyze spending patterns or track income. This project automates data extraction and enables users to interact with their financial data using natural language.
 
-### Data Shape
-- Rows: ~1,000–5,000 transactions per user
-- Columns: ~15–20 attributes
-
-### Time Period
-- Monthly statements
-- Supports multi-year history
-
-### Unit of Observation
-- Each row represents a single financial transaction
-
-### Data Dictionary (Key Columns)
-
-| Column Name | Data Type | Definition | Example Values |
-|------------|----------|------------|----------------|
-| transaction_date | Date | Date of transaction | 2024-06-15 |
-| description | Text | Statement description | Amazon Purchase |
-| amount | Float | Transaction amount | -45.32 |
-| transaction_type | Category | Income or Expense | Income, Expense |
-| category | Category | Spending category | Rent, Groceries |
-| vendor | Text | Merchant or person | Amazon, Zelle |
-| account_type | Category | Account used | Debit, Credit |
-| month | Category | Transaction month | June |
-| year | Integer | Transaction year | 2024 |
-
-### Target Variable
-- `category` (for classification and insights)
-
-### Feature Variables
-- Amount
-- Vendor
-- Description
-- Date
-- Account type
-- Transaction type
+**Research Questions:**
+- Can OCR and LLMs extract structured financial data from bank statements?
+- Can users query their financial data using natural language?
+- Can dashboards improve financial understanding?
 
 ---
 
-## 3. Exploratory Data Analysis (EDA)
+## 3. Data
 
-EDA was conducted using **Jupyter Notebook** with **Pandas, NumPy, and Plotly Express**.
+**Data Sources:**  
+User-uploaded bank statement PDF files (debit and credit)
 
-### Key Analysis
-- Monthly income vs expense trends
-- Category-wise spending distribution
-- Top vendors by total spending
-- Debit vs credit usage patterns
+**Data Size:**  
+Approximately 1–3 MB per PDF statement
 
-### Data Cleaning
-- Removed duplicate transactions
-- Standardized date formats
-- Normalized currency values
-- Cleaned vendor names
-- Filled missing categories using LLM inference
+**Data Shape:**  
+1,000–5,000 rows per user  
+15–20 columns per transaction
 
-### Data Transformation
-- Pivoted monthly summaries
-- Created SQL views:
-  - `v_expenses`
-  - `v_income`
-  - `v_monthly_summary`
-  - `v_account_summary`
+**Time Period:**  
+Monthly bank statements (user-dependent)
 
-### Text Preprocessing
-- Lowercasing
-- Tokenization
-- Stopword removal
-- Keyword-based vendor extraction
+**What Does Each Row Represent?**  
+One financial transaction
 
-### Tidy Data Principles
-- One row per transaction
-- One column per attribute
-- No redundant fields
+**Data Dictionary (Key Columns):**
+
+| Column Name | Data Type | Description |
+|------------|-----------|-------------|
+| transaction_date | Date | Date of transaction |
+| description | Text | Transaction description |
+| amount | Float | Transaction amount |
+| category | Categorical | Expense or income category |
+| vendor | Text | Merchant or person |
+| account_type | Categorical | Debit or Credit |
+
+**Target Variable:**  
+Transaction category
+
+**Feature Variables:**  
+Amount, description, vendor, date, account type
 
 ---
 
-## 4. Model Training
+## 4. Exploratory Data Analysis (EDA)
 
-### Models Used
-- Large Language Models (LLMs) for:
-  - PDF section extraction
-  - Vendor and category classification
-  - Natural language to SQL translation
+EDA was performed using Jupyter Notebook.
 
-### Training Strategy
+Key steps:
+- Summary statistics of income and expenses
+- Monthly spending trends
+- Category-wise expense analysis
+- Vendor-based spending analysis
+
+Data cleaning included:
+- Removing duplicate transactions
+- Standardizing date formats
+- Normalizing currency values
+- Cleaning transaction descriptions
+
+Text data was preprocessed using normalization and tokenization.  
+The final dataset follows tidy data principles, with one row per transaction and one column per attribute.
+
+---
+
+## 5. Model Training
+
+This project uses pre-trained **Large Language Models (LLMs)** instead of traditional supervised machine learning models.
+
+**Models Used:**
+- LLMs for extracting structured data, inferring categories, and translating natural language queries to SQL
+
+**Training Approach:**
 - Prompt-based inference
-- Rule-based validation and fallbacks
-- No traditional supervised model training
+- No train/test split required
+- Rule-based validation of outputs
 
-### Python Packages
-- pandas
-- SQLAlchemy
-- Streamlit
-- Plotly Express
-- spaCy
-- OpenAI API
+**Python Packages:**
+- pandas  
+- SQLAlchemy  
+- spaCy  
+- Streamlit  
+- Plotly Express  
 
-### Development Environment
-- Local machine
+**Development Environment:**
+- Local laptop
+- Jupyter Notebook
 - GitHub
-- Neon PostgreSQL (cloud-hosted)
+- Neon PostgreSQL
 
-### Evaluation Metrics
-- Extraction accuracy
-- SQL correctness
-- Response relevance
-- End-to-end system reliability
+**Model Evaluation:**
+- Accuracy of extracted transactions
+- Correctness of generated SQL queries
+- Quality of chatbot responses
 
 ---
 
-## 5. Application of the Trained Models
+## 6. Application of the Trained Models
 
-A web-based application was built using **Streamlit** to allow users to interact with the system.
+A web application was developed using **Streamlit** to allow users to interact with their financial data.
 
-### System Architecture
+**Application Workflow:**  
+User → Streamlit App → OCR → LLM Processing → PostgreSQL → Chatbot & Dashboards
 
+**Key Features:**
+- PDF upload
+- Automated data extraction
+- Natural language chatbot
+- Spending and income summaries
+- Interactive dashboards
+
+---
+
+## 7. Conclusion
+
+This project demonstrates how OCR and LLMs can be combined to build a personal finance chatbot that enables users to understand their financial behavior through conversational interaction.
+
+**Limitations:**
+- OCR accuracy depends on statement quality
+- Limited support for different bank formats
+
+**Lessons Learned:**
+- Data cleaning is essential
+- Prompt design strongly affects results
+- Combining AI with rule-based logic improves reliability
+
+**Future Work:**
+- Budget recommendations
+- Investment insights
+- Support for additional banks
+
+---
+
+## 8. References
+
+- OpenAI Documentation  
+- Streamlit Documentation  
+- PostgreSQL Documentation  
+- UMBC DATA606 Course Materials  
