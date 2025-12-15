@@ -16,7 +16,7 @@ Tejaswini Jammi
 https://github.com/TejaswiniJammi/Personal-Finance-Chatbot
 
 **LinkedIn Profile:**  
-https://www.linkedin.com/in/tejaswini-jammi
+https://www.linkedin.com/in/tejaswinijammi
 
 **PowerPoint Presentation:**  
 (To be added)
