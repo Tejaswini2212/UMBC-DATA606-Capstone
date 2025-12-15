@@ -19,7 +19,8 @@ Tejaswini Jammi
 https://www.linkedin.com/in/tejaswinijammi
 
 **PowerPoint Presentation:**  
-presentation/Finance_chatbot_presentation.pptx
+[presentation/Finance_chatbot_presentation_PDF](https://github.com/Tejaswini2212/UMBC-DATA606-Capstone/blob/main/presentation/Finance_chatbot_presentation.pdf)
+[presentation/Finance_chatbot_presentation_Ppt](https://github.com/Tejaswini2212/UMBC-DATA606-Capstone/blob/main/presentation/Finance_chatbot_presentation.pptx)
 
 **YouTube Video:**  
 (To be added)
