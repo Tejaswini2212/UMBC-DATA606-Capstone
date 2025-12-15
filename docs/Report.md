@@ -23,7 +23,7 @@ https://www.linkedin.com/in/tejaswinijammi
 [presentation/Finance_chatbot_presentation_Ppt](https://github.com/Tejaswini2212/UMBC-DATA606-Capstone/blob/main/presentation/Finance_chatbot_presentation.pptx)
 
 **YouTube Video:**  
-(To be added)
+[Link_for_Video_Presentation](https://youtu.be/2MsofSSKPF4)
 
 ---
 
