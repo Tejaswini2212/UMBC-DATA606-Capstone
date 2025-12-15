@@ -13,13 +13,13 @@ Dr Chaojie (Jay) Wang
 Tejaswini Jammi
 
 **GitHub Repository:**  
-https://github.com/TejaswiniJammi/Personal-Finance-Chatbot
+[https://github.com/TejaswiniJammi/Personal-Finance-Chatbot](https://github.com/Tejaswini2212/UMBC-DATA606-Capstone/tree/main)
 
 **LinkedIn Profile:**  
 https://www.linkedin.com/in/tejaswinijammi
 
 **PowerPoint Presentation:**  
-(To be added)
+presentation/Finance_chatbot_presentation.pptx
 
 **YouTube Video:**  
 (To be added)
