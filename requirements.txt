@@ -1,9 +1,0 @@
-streamlit
-pandas
-plotly
-sqlalchemy
-psycopg2-binary
-openai
-requests
-bcrypt
-streamlit-autorefresh
